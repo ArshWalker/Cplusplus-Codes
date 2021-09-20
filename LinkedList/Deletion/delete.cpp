@@ -78,7 +78,7 @@ void deletion(node *&head, int val)
           return;
      }
      node *todelete = temp->next;
-     temp->next = temp->next->next;
+     temp->next = temp->next->next; // read this first
 
      delete todelete; // for memory mangement
 }
